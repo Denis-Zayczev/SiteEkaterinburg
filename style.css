@@ -1,0 +1,1517 @@
+html,body{
+	margin: 0;
+	padding: 0;
+    overflow-x:hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+img{
+	display: block;
+}
+.colortext {
+	color: red;
+}
+
+.colorborder{
+	border-bottom-style: dashed;
+	border-color: red;
+	border-bottom-width: 5px;
+}
+
+
+.header {
+	background-image: url(img/Header/Background.png);
+	padding-top: 50px;
+	color: white;
+	background-repeat: no-repeat;
+	 
+}
+
+
+
+.fixed-container {
+	width: 1173px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header-flex{
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+}
+
+	.header-flex img {
+		height: 35px;
+		margin: 10px 0;
+	}
+
+.header-nav{
+	display: flex;
+}
+
+.address{
+	background-image: url(img/Header/marker.png);
+	background-repeat: no-repeat;
+	padding: 0 0 0 70px;
+	background-position: left;
+	margin: 0;
+	list-style-type: none;
+	margin-right: 40px;
+	padding-top: 5px;
+}
+
+
+.address-collapse{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.address-route{
+	font-size: 14px;
+	border-bottom: solid 2px;
+	width: 150px;
+}
+
+.phone{
+	background-image: url(img/Header/call.png);
+	background-repeat: no-repeat;
+	padding: 0 0 0 70px;
+	background-position: left;
+	margin: 0;
+    list-style-type: none;
+}
+
+
+.phone-collapse{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.phone-request {
+	font-size: 14px;
+	border-bottom: solid 2px;
+	width: 120px;
+}
+
+.header-car{
+	background-image: url(img/Header/Car.png);
+	background-repeat: no-repeat;
+	background-position: 90% 10px;
+	height: 599px;
+	 
+}
+.header-main {
+	top: 110px;
+	position: relative;
+}
+.header-main h1 {
+	font-size: 46px;
+	font-weight: 900;
+}
+
+.header-main h2{
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.value{
+	display: flex;	
+	
+}
+
+.mobile-text_header{
+	display: none;
+}
+
+.header-social_mobile__text{
+	display: none;
+}
+
+.header-main_phone-input{
+	height: 60px;
+	width: 250px;
+	border-radius: 50px;
+	background-color: #2e2e32;
+	border-width: 2px;
+	border-color: white;
+	text-align: center;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 20px 0 0;
+}
+.phone-text p{
+	font-size: 20px;
+	margin-top: 80px;
+}
+
+.header-main_button {
+	background: url(img/Header/calc.png);
+	background-repeat: no-repeat;
+	width: 404px;
+	height: 80px;
+	border: none;
+	cursor: pointer;
+}
+
+.button-text p{
+	font-size: 16px;
+	text-align: center;
+}
+
+.header-main-social{
+	display: flex;
+	height: 70px;
+	width: 230px;
+	cursor: pointer;
+}
+
+.social-mail{
+	background: url(img/Header/social/mail.png);
+	width: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.social-whatsapp{
+	background: url(img/Header/social/whatsapp.png);
+	width: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.social-viber{
+	background: url(img/Header/social/viber.png);
+	width: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.main-continer {
+	background-image: url(img/Main/Auto.png);
+	height: 540px;
+	background-repeat: no-repeat;
+	margin: 150px 0;
+}
+
+.main-request{
+	display: block;
+	position: relative;
+	float: right;
+	text-align: center;
+}
+
+.main-request h2{
+	font-size: 40px;
+	font-weight: 900;
+	background-image: url(img/Main/point.png);
+	background-repeat: no-repeat;
+	background-position: 10px;
+	margin: 0;
+}
+
+.main-request h3{
+	font-size: 30px;
+	font-weight: 800;
+	margin-top: 0;
+}
+
+.main-request p {
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.main-request-mobile{
+	display: none;
+}
+
+
+
+.header-search {
+  position: relative;
+  font-size: 14px;
+}
+
+.main-request-mobile_parts{
+	display: none;
+}
+
+.disable{
+	cursor: default!important;
+	background: darkgray;
+}
+
+.search {
+  width: 434px;
+  padding-left: 20px;
+  height: 60px;
+  font: inherit;
+  color: #000;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  border: solid;
+  border-color: #b8b8b8;
+  cursor: pointer;
+}
+
+
+.search:focus {
+  outline: none;
+}
+
+.search-label {
+  position: absolute;
+  top: 22px;
+  left: 40px;
+  color: #ababac;
+  font-size: 18px;
+}
+
+.search:focus + .search-label {
+  display: none;
+}
+
+.request-bt {
+	width: 465px;
+	height: 70px;
+	background-color: #e92937;
+	border-radius: 50px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.tabs-slider{
+	display: flex;
+  	justify-content: space-around;
+}
+
+.tabs-slider p{
+	font-size: 24px;
+	font-weight: 800;
+	margin: 10px 0;
+}
+
+.photo-1{
+	background-image: url(img/photo/photo1.jpg);
+	background-repeat: no-repeat;
+}
+
+.photo-2{
+	background-image: url(img/photo/photo2.jpg);
+	background-repeat: no-repeat;
+}
+
+.photo-3{
+	background-image: url(img/photo/photo3.jpg);
+	background-repeat: no-repeat;
+}
+
+.slider-img{
+	position: relative;
+	height:450px;
+	margin:35px 0px 60px 0px; 
+	border-radius:50px;
+}
+
+.slider-img::after{
+	content:"ДО";
+	text-align:center;
+	position: absolute;
+	width:130px;
+	height:50px;
+	top:30px;
+	left:-20px;
+	background-color:#ec2b39;
+	border-radius:20px;
+	font-weight:900;
+	font-size:30px;
+	color:white;
+	padding-top:8px;
+	-webkit-box-shadow: -1px 1px 6px -1px rgba(0,0,0,0.54);
+	-moz-box-shadow: -1px 1px 6px -1px rgba(0,0,0,0.54);
+	box-shadow: -1px 1px 6px -1px rgba(0,0,0,0.54);
+	
+}
+
+.slider-img::before{
+	content:"ПОСЛЕ";
+	text-align:center;
+	position: absolute;
+	width:160px;
+	height:50px;
+	top:30px;
+	right:-20px;
+	background-color:#ec2b39;
+	border-radius:20px;
+	font-weight:900;
+	font-size:30px;
+	color:white;
+	padding-top:13px;
+	-webkit-box-shadow: 2px 1px 6px -1px rgba(0,0,0,0.54);
+	-moz-box-shadow: 2px 1px 6px -1px rgba(0,0,0,0.54);
+	box-shadow: 2px 1px 6px -1px rgba(0,0,0,0.54);
+	
+}
+
+.slider-info{
+	position:absolute;
+	bottom:-60px;
+	right:55px;
+	width:530px;
+	height:130px;
+	padding-top:23px;
+	text-align:center;
+	background-image: url(img/photo/info.png);
+	background-repeat: no-repeat;
+}
+
+.slider-text{
+	font-size:30px;
+	color:white;
+}
+
+.slider-price , .slider-days{
+	font-weight:900;
+}
+
+.slider-arrow-left , .slider-arrow-right{
+	cursor: pointer;
+}
+
+.slider-arrow-left:hover , .slider-arrow-right:hover{
+	opacity: 0.7;
+}
+
+.slider-arrow-left{
+	position: absolute;
+	width: 23px;
+	height: 38px;
+	left:25px;
+	top:200px;
+	background-image: url(img/photo/arrow-left.png);
+	background-repeat: no-repeat;
+}
+
+.slider-arrow-right{
+	position: absolute;
+	width: 23px;
+	height: 38px;
+	right:25px;
+	top:200px;
+	background-image: url(img/photo/arrow-right.png);
+	background-repeat: no-repeat;
+}
+
+.link-active{
+
+	font-weight: 500;
+	color:#e92937;
+	background-color:white;
+	border:2px solid #e92937;
+	transform: skew(-4deg, 0deg)!important;
+	border-radius: 12px;
+
+}
+
+ul.hr {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0px 0px;
+    width: 918px;
+    font-size: 20px;
+    height: 54px;
+    background-color: #ebebeb;
+    transform: skew(-20deg, 0deg);
+    border-radius: 12px;
+ }
+
+ ul.hr li {
+  display: inline; 
+  padding: 13px 30px;
+  list-style-type: none;
+  cursor: pointer;
+  transform: skew(20deg, 0deg);
+	
+ }
+
+ ul.hr li:hover{
+	opacity: 0.6;
+	color:#e92937;
+ }
+
+ .link-active  .li-link  {
+	display:block;
+	transform: skew(20deg, 0deg)
+}
+
+.main-background{
+	background-image: url(img/Main/main-bacground.png);
+	background-repeat: no-repeat;
+	height: 824px;
+	background-position: 150px;
+}	
+
+
+.main-background h2{
+	top: 225px;
+	font-size: 36px;
+	font-weight: 800;
+	position: relative;
+	line-height: 1.5;
+
+}
+
+.main-background_mobile{
+	display: none;
+}
+
+.main-background_dealer-prices {
+	background-image: url(img/Main/background-noutbook.png);
+	background-repeat: no-repeat;
+	height: 559px;
+}
+
+.main-background_dealer-prices h2{
+	position: relative;
+	top: 225px;
+	font-size: 36px;
+	font-weight: 800;
+	position: relative;
+	line-height: 1.5;
+	top: 150px;
+	text-align: right;
+}
+
+.main-background_dealer-prices_mobile{
+	display: none;
+}
+
+.main-background_tow-truck{
+	margin: 135px 0; 
+	background-image: url(img/Main/tow-truck.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+
+
+.main-background_tow-truck h2{
+	font-size: 40px;
+	font-weight: 900;
+	margin: 0;
+}
+.main-background_tow-truck h3{
+	font-size: 24px;
+	margin-top: 0;
+	font-weight: normal;
+}
+
+.main-background_tow-truck p{
+	font-size: 24px;
+	margin: 0 0 25px 0;
+}
+
+.main-address{
+	background-image: url(img/Main/marker.png);
+	background-repeat: no-repeat;
+	padding: 5px 50px;
+	height: 38px;
+}
+
+.main-bt_tow-truck{
+	background-image: url(img/Main/main-bt.png);
+	height: 70px;
+	width: 449px;
+	border: none;
+	cursor: pointer;
+	background-color: white;
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+
+.main-HowToFind{
+	margin:200px 0;
+}
+.HowToFind h2{
+	font-size: 40px;
+	font-weight: 900;
+	text-align: center;
+}
+
+.main-gallery {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	font-size: 18px;
+}
+
+.main-gallery-form{
+	height: 270px;
+	width: 270px;
+	border-radius: 50px;
+	border: 4px solid red;
+	background-color: #e0e0e0;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+
+
+.block-1{
+	background-image:url(./img/gallery/photo-1.jpg);
+}
+
+.main-gallery-form.block-1::after {
+	content: "";
+    position: absolute;
+  	width: 50px;
+	height: 50px;
+	background-image: url(img/photo/arrow-right.png);
+	background-repeat: no-repeat;
+	background-color: red;
+	left: 265px;
+	border-radius: 50%;
+	background-position: 17px;
+	top: 195px;
+}
+
+.block-2{
+	background-image:url(./img/gallery/photo-2.jpg);
+}
+
+.main-gallery-form.block-2::after {
+	content: "";
+    position: absolute;
+  	width: 50px;
+	height: 50px;
+	background-image: url(img/photo/arrow-right.png);
+	background-repeat: no-repeat;
+	background-color: red;
+	left: 560px;
+	border-radius: 50%;
+	background-position: 17px;
+	top: 195px;
+}
+
+.block-3{
+	background-image:url(./img/gallery/photo-3.jpg);
+}
+
+.main-gallery-form.block-3::after {
+	content: "";
+    position: absolute;
+  	width: 50px;
+	height: 50px;
+	background-image: url(img/photo/arrow-right.png);
+	background-repeat: no-repeat;
+	background-color: red;
+	left: 860px;
+	border-radius: 50%;
+	background-position: 17px;
+	top: 195px;
+}
+
+
+.block-4{
+	background-image:url(./img/gallery/photo-4.jpg);
+}
+
+.footer h2{
+	font-size: 36px;
+	font-weight: 900;
+	left: 30px;
+	position: relative;
+}
+
+.footer-contacts{
+	height: 610px;
+	width: 575px;
+	background-color: #e91f2e;
+	border-radius: 50px;
+	color: white;
+	float: right;
+	top: -100px;
+	position: relative;
+}
+
+.footer-contacts h2{
+	padding: 90px 50px 40px 0;
+	margin: 0;
+	position: relative;
+	font-size: 36px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.footer-contacts p{
+	left: 85px;
+	padding: 6px 0 0 70px;
+	height: 59px;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.footer-call{
+	background-image: url(img/Footer/call.png);
+	font-size: 24px;
+}
+
+.footer-email{
+	background-image: url(img/Footer/email.png);
+	font-size: 24px;
+}
+
+.footer-marker{
+	background-image: url(img/Footer/marker.png);
+	font-size: 16px;
+}
+
+.footer-map{
+	background-image: url(img/Footer/map.PNG);
+	background-repeat: no-repeat;
+	height: 622px;
+	background-size: cover;
+	
+}	
+
+
+@media (max-width: 1224px) {
+
+/*------ Первый блок ----- */
+
+	.fixed-container{
+		width: 748px;
+	}
+
+	.header-flex img {
+		width: 200px;
+	}
+
+	.address {
+		margin-right: 20px;
+	}
+
+	.address li{
+		font-size: 13px;
+
+	}
+
+	.phone li{
+		font-size: 13px;
+	}
+
+	.header-car{
+		background-position: right top;
+		background-size: 380px;
+	}
+
+
+
+/*------ Второй блок ----- */
+	.main-continer{
+		background-size: 500px;
+		background-position: left;
+		margin: 100px 0;
+	}
+
+/*------ третий блок ----- */
+	.tabs-slider {
+		width: 740px;
+	}
+
+	.tabs-slider p{
+		width: 250px;
+		margin: 20px 0;
+		font-size: 17px;
+	}
+
+	ul.hr{
+		width: auto;
+		height: 68px;
+		font-size: 18px;
+	}
+
+	.photo-1{
+		background-size: 800px 446px;
+	}
+
+	.photo-2{
+		background-size: 800px 446px;
+	}
+
+	.photo-3{
+		background-size: 800px 446px;
+	}
+	
+/*------ четвёртый блок ----- */
+	.main-background {
+    	background-size: 700px 550px;
+    	background-position: bottom;
+    	margin: 0 30px;
+    	height: 555px;
+}
+
+	.main-background h2 {
+    top: 55px;
+}
+
+/*------ пятый блок ----- */
+	.main-background_dealer-prices{
+		background-size: 700px 540px;
+	}
+
+	.main-background_dealer-prices h2{
+		right: 50px;
+	}
+
+/*------ шестой блок ----- */
+	.main-background_tow-truck{
+		background-size: 300px;
+		left: 20px;
+		position: relative;
+	}
+
+/*------ седьмой блок ----- */
+	.main-HowToFind {
+    	margin: 50px 0;
+	}
+
+	.main-gallery{
+		flex-wrap: wrap;
+		width: 650px;
+		left: 50px;
+		position: relative;
+	}
+
+
+.main-gallery-form.block-1::after {
+	content: "";
+    position: absolute;
+  	width: 50px;
+	height: 50px;
+	background-image: url(img/photo/arrow-right.png);
+	background-repeat: no-repeat;
+	background-color: red;
+	left: 300px;
+	border-radius: 50%;
+	background-position: 17px;
+	top: 110px;
+}
+
+.main-gallery-form.block-3::after {
+	content: "";
+    position: absolute;
+  	width: 50px;
+	height: 50px;
+	background-image: url(img/photo/arrow-right.png);
+	background-repeat: no-repeat;
+	background-color: red;
+	left: 300px;
+	border-radius: 50%;
+	background-position: 17px;
+	top: 500px;
+}
+
+.main-gallery-form.block-2::after {
+	display: none;
+}
+
+/*------ восьмой блок ----- */
+	.footer-contacts{
+		margin: 100px 100px 0 100px;
+		top: 0;
+		float: left;
+		height: 510px;
+	}
+}
+
+@media (max-width: 765px) {
+
+/*------ Первый блок ----- */
+
+	.fixed-container{
+		width: 448px;
+	}
+	.header-flex img{
+		height: 31px;
+		width: 270px;
+	}
+
+	.mobile-text_header{
+		display: block;
+		padding-top: 430px;
+		position: relative;
+		text-align: center;
+	}
+
+	.header-social_mobile__text{
+		display: block;
+		text-align: center;
+		font-size: 20px;
+	}
+	
+	.mobile-text_header h3{
+		font-size: 36px;
+		font-weight: 900;
+		margin: 10px 0;
+	}
+
+	.mobile-text_header p{
+		font-size: 16px;
+	}
+
+	.header{
+		background-image: none;
+		background-color: #232326;
+		height: 1120px;
+		padding-top: 30px;
+	}
+
+	.address {
+		display: none;
+	}
+	
+	.phone {
+		display: none;
+	}
+	.header-main{
+		top: 0;
+	}
+	
+	.header-main h1{
+		font-size: 39px;
+		text-align: center;
+	}
+	
+	.header-main h2{
+		font-size: 22px;
+		text-align: center;
+	}
+
+	.header-car{
+		background-position: center 150px;
+		background-size: 448px;
+	}
+
+	.value{
+		flex-wrap: wrap;
+	}
+	.button-text p{
+		display: none;
+	}
+	.phone-text p{
+		display: none;
+	}
+
+	.header-main_phone-input{
+		width: 442px;
+		margin: 0 0 20px 0;
+		height: 74px;
+	}
+	.header-main_button{
+		width: 453px;
+		background-size: cover;
+		height: 90px;
+	}
+
+/*------ Второй блок ----- */
+
+	.main-request {
+		text-align: center;
+	}
+
+	.main-continer{
+		margin: 60px 0;
+		height: 1000px;
+		background-position: 0 620px;
+		background-size: 400px;
+	}
+
+	.main-request h2{
+		font-size: 23px;
+		background-position: 100px;
+		padding-left: 30px;
+		margin-bottom: 20px;
+	}
+
+	.main-request p {
+		display: none;
+	}
+	.main-request-mobile {
+		display: block;
+		font-size: 34px;
+		font-weight: 900;
+		margin-bottom: 40px;
+	}
+	.header-search{
+		left: 10px;
+	}
+	.main-request-mobile_parts {
+		display: block;
+		font-size: 18px;
+		margin: 0 0 20px 0;
+	}
+
+
+	.main-request h3{
+		margin-top: 250px;
+	}
+
+	.request-bt{
+		width: 428px;
+	}
+
+
+/*------ Третий блок ----- */
+
+.tabs-slider {
+    display: contents;
+}
+
+.tabs-slider p {
+    font-size: 37px;
+    margin: 0 auto;
+    position: relative;
+    width: max-content;
+}
+
+ul.hr {
+    width: auto;
+    height: 67px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.photo-1 {
+	background-image: url(img/photo/photo1-mb.jpg);
+    background-size: cover;
+    width: 450px;
+    height: 892px;
+}
+
+.photo-2 {
+    background-image: url(img/photo/photo2-mb.jpg);
+    background-size: cover;
+    width: 450px;
+    height: 892px;
+}
+
+.photo-3 {
+    background-image: url(img/photo/photo3-mb.jpg);
+    background-size: cover;
+    width: 450px;
+    height: 892px;
+}
+
+
+.slider-img::before{
+	top: 464px;
+	left: -20px;
+}
+
+.slider-info {
+    position: absolute;
+    bottom: -90px;
+    right: 37px;
+    width: 381px;
+    height: 140px;
+    padding-top: 8px;
+    background-size: contain;
+}
+
+.slider-arrow-left{
+	width: 50px;
+	height: 50px;
+	left: -25px;
+	top: 405px;
+	border: solid 1px;
+	border-radius: 50%;
+	background-position: 10px;
+	background-color: #6f6f6f;
+}
+
+.slider-arrow-right {
+    width: 50px;
+    height: 50px;
+    right: -15px;
+    top: 410px;
+    border: solid 1px;
+    border-radius: 50%;
+    background-position: 17px;
+    background-color: #6f6f6f;
+
+}
+
+.slider-text {
+    font-size: 28px;
+}
+
+/*------ Чнтвёртый блок ----- */
+
+
+.main-background {
+    background-size: 610px 358px;
+    background-position: 11px 110px;
+    margin: 150px 0 50px 30px;
+    height: 466px;
+}
+
+.main-background h2{
+	display: none;
+}
+
+
+.main-background_mobile{
+	display: contents;
+}
+
+.main-background_mobile {
+	display: block;
+	font-size: 37px;
+	line-height: 1em;
+	
+}
+
+.main-background_mobile h3{
+	font-weight: 900;
+
+}
+
+.main-background_mobile__text {
+	font-size: 24px;
+	line-height: 1em;
+
+}
+
+/*------ Пятый блок ----- */
+
+.main-background_dealer-prices{
+	background-size: 400px 270px;
+	background-position: left 160px;
+	height: 436px;
+}
+
+
+.main-background_dealer-prices h2{
+	display: none;
+}
+
+
+.main-background_dealer-prices_mobile{
+	display: block;
+	
+}
+
+.main-background_dealer-prices_mobile h3{
+	font-size: 30px;
+	font-weight: 900;
+	text-align: right;
+}
+
+/*------ Шёстой блок ----- */
+
+.main-background_tow-truck{
+	margin: 50px 0;
+	left: 10px;
+	background-position: 90px 150px;
+}
+
+
+.main-background_tow-truck h2 {
+    font-size: 41px;
+    font-weight: 900;
+    margin: 0px;
+    text-align: center;
+}
+.main-background_tow-truck h3 {
+    font-size: 22px;
+    margin: 10px 0 200px 0;
+    text-align: center;
+}
+
+.search{
+	width: 405px;
+}
+.main-background_tow-truck p {
+    font-size: 19px;
+}
+
+.main-bt_tow-truck {
+	width: 416px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	left: 10px;
+	position: relative;
+}
+
+/*------ Седьмой блок ----- */
+
+.main-gallery{
+	flex-wrap: nowrap;
+	left: 0;
+	overflow-x: scroll;
+	width: 600px;
+}
+
+
+.main-gallery-form.block-1::after {
+    left: 255px; 
+}
+
+.main-gallery-form.block-2::after {
+	display: contents;
+	top: 110px;
+    left: 530px; 
+}
+
+.main-gallery-form.block-3::after {
+	top: 110px;
+    left: 810px; 
+}
+
+
+/*------ Восьмой блок ----- */
+
+.footer h2{
+	text-align: center;
+	left: 0;
+}
+.footer-contacts{
+	top: 215px;
+	float: left;
+	height: 360px;
+	width: 420px;
+	margin: 0;
+	left: 15px;
+}
+
+.footer-contacts p {
+    left: 40px;
+    padding: 4px 0 0 70px;
+    height: 55px;
+    margin: 10px;
+}
+.footer-contacts h2{
+	padding: 40px 0 20px 0;
+	font-size: 26px;
+}
+
+}
+
+@media (max-width: 480px) {
+
+/*------ Первый блок ----- */
+
+	.fixed-container{
+		width: 280px;
+	}
+	.header-flex img{
+		height: 22px;
+		width: 170px;
+	}
+	
+	.header-main h1{
+		font-size: 24px;
+		text-align: center;
+	}
+	
+	.header-main h2{
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.header-car{
+		background-position: center 110px;
+		background-size: 318px;
+	}
+
+	.mobile-text_header {
+   	 	padding-top: 320px;
+	}
+
+	.mobile-text_header h3 {
+   		font-size: 28px;
+	}
+
+	.mobile-text_header p {
+    	font-size: 11px;
+    	font-weight: 600;
+	}
+
+	.header-main_phone-input {
+    	width: 280px;
+    	margin: 0 0 20px 0;
+    	height: 48px;
+	}
+
+	.header-main_button {
+    	width: 293px;
+    	background-size: cover;
+    	height: 58px;
+    	padding: 0;
+	}	
+
+	.header{
+		height: 875px;
+	}
+
+
+/*------ Второй блок ----- */
+
+	.main-request {
+		text-align: center;
+		float: none;
+	}
+
+	.main-request h2 {
+    	font-size: 20px;
+    	background-position: 27px;
+    	background-size: 20px;
+	}
+
+	.main-request-mobile {
+    	font-size: 24px;
+	}
+
+	.search {
+    	width: 250px;
+    	margin-right: 5px;
+	}
+
+	.main-request-mobile_parts {
+    	font-size: 15px;
+	}
+
+	.main-continer {
+    	margin: 60px 0;
+    	height: 850px;
+    	background-position: 0 540px;
+    	background-size: 300px;
+	}	
+
+	.main-request h3 {
+    	margin-top: 190px;
+    	font-size: 22px;
+	}	
+
+	.request-bt {
+    	width: 250px;
+	}
+
+/*------ Третий блок ----- */
+
+.tabs-slider p {
+    font-size: 30px;
+}
+
+.photo-1 {
+    width: 287px;
+    height: 433px;
+}
+.photo-2 {
+    width: 287px;
+    height: 433px;
+}
+.photo-3 {
+    width: 287px;
+    height: 433px;
+}
+
+
+.slider-img::after {
+    top: 240px;
+    width: 75px;
+	height: 30px;
+	font-size: 25px;
+	padding-bottom: 5px;
+	top: 35px;
+}
+
+
+.slider-img::before {
+    width: 100px;
+    height: 26px;
+    font-size: 23px;
+    padding-bottom: 10px;
+    top: 235px;
+}
+
+
+.slider-arrow-left {
+    left: -15px;
+    top: 180px;
+}
+
+.slider-arrow-right {
+    right: -10px;
+	top: 185px;
+}
+
+
+.slider-info {
+    bottom: -89px;
+    right: 12px;
+    width: 267px;
+    height: 57px;
+    top: 382px;
+}
+
+.slider-text {
+    font-size: 19px;
+}
+
+ul.hr li {
+    padding: 15px 6px;
+}
+
+ul.hr {
+    height: 65px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/*------ Чнтвёртый блок ----- */
+
+
+.main-background_mobile {
+    font-size: 21px;
+    line-height: 1.2em;
+}
+
+.main-background_mobile__text {
+    font-size: 17px;
+    line-height: 1em;
+}
+
+.main-background {
+    background-size: 426px 285px;
+    background-position: -140px 70px;
+    margin: 100px 0 0px 20px;
+    height: 330px;
+}
+
+/*------ Пятый блок ----- */
+
+
+.main-background_dealer-prices_mobile h3 {
+    font-size: 19px;
+}
+
+.main-background_dealer-prices {
+    background-size: 290px 170px;
+    background-position: left 110px;
+    height: 275px;
+}
+
+/*------ Шёстой блок ----- */
+
+.main-background_tow-truck {
+    margin: 50px 0;
+    left: 10px;
+    background-position: 5px 110px;
+}
+
+
+.main-background_tow-truck h2 {
+    font-size: 27px;
+}
+
+.main-background_tow-truck h3 {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.main-background_tow-truck p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.search {
+    padding: 0;
+}
+
+.main-address  {
+    background-size: 30px;
+    padding: 0;
+}
+
+.main-address p {
+    font-size: 14px;
+    padding: 4px 0 0 30px;
+    width: max-content;
+}
+
+.main-bt_tow-truck {
+	background-image: none;
+    background-color: #DA1F2D;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    border-radius: 35px;
+    width: 260px;
+	padding: 0;
+}
+
+/*------ Седьмой блок ----- */
+
+.HowToFind h2 {
+    font-size: 30px;
+}
+
+
+
+
+/*------ Восьмой блок ----- */
+
+.footer-contacts {
+    top: 230px;
+    height: 330px;
+    width: 260px;
+    margin: 0;
+}
+
+.footer-contacts h2 {
+    font-size: 18px;
+}
+
+.footer-contacts p {
+    left: 8px;
+    padding: 4px 0 0 70px;
+    padding-left: 70px;
+    height: 50px;
+    margin: 10px;
+    background-size: 30px;
+    padding-left: 40px;
+}
+
+.footer-call {
+    font-size: 18px;
+}
+
+.footer-email {
+    font-size: 21px;
+}
+
+.footer-marker {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+}

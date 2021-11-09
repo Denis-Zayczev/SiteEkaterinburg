@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autocolor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="fixed-container">
+        <div class="header-flex">
+          <img src="img/Header/logo.png" alt="Logo">
+          <nav class="header-nav">
+          <ul class="address">
+            <li class="address-collapse">г.Екатеринбург, ул.Черепанова 23</li>
+            <li class="address-route">Построить маршрут</li>
+          </ul>
+          <ul class="phone">
+            <li class="phone-collapse">+7 (800) 000 00 00</li>
+            <li class="phone-request">Заказать звонок</li>
+          </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="header-car">
+        <div class="fixed-container">
+          <div class="header-main">
+            <h1>КУЗОВНОЙ РЕМОНТ</h1>
+            <h2>Как и офицального диллера,<br>только <span class="colorborder"> на 40% дешевле!</span></h2>
+
+            <div class="mobile-text_header">
+              <h3>Свяжемся с Вами</h3>
+              <p>по WhatsApp и оценим по фото стоимость<br> ремонта за 5 минут</p>
+            </div>
+
+            <div class="value">
+              <div class="phone-text">
+                <input type="tel" placeholder="+7 (___) ___ - __ - __" class="header-main_phone-input">
+                <p class="value-text_message">или напишите нам</p>
+              </div>
+              <div class="button-text"> 
+                <button class="header-main_button"></button>
+                <p class="value-text_whatsApp">Свяжемся с Вами по WhatsApp и оценим<br> по фото стоимость ремонта за 5 минут</p>
+              </div>
+            </div>
+            
+            <div class="header-social_mobile__text">
+              <p>или напиши нам</p>
+            </div>
+
+            <div class="header-main-social">
+              <div class="social-mail">
+                <a href=""></a>
+              </div>
+              <div class="social-whatsapp">
+                <a href=""></a>
+              </div>
+              <div class="social-viber">
+                <a href=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <main>
+    <section>
+      <div class="main-continer">
+        <div class="fixed-container">
+          <div class="main-request">
+            <h2>ONLINE - ЗАЯВКА</h2>
+
+            <div class="main-request-mobile">УКАЖИТЕ МАРКУ<br>И МОДЕЛЬ ВАШЕГО<br> АВТО И<span class="colortext"> УЗНАЙТЕ <br>СТОИМОСТЬ ПРЯМО<br> СЕЙЧАС</span></div>
+
+            <p>УКАЖИТЕ МАРКУ И МОДЕЛЬ ВАШЕГО АВТО<br>и<span class="colortext"> УЗНАЙТЕ СТОИМОСТЬ ПРЯМО СЕЙЧАС</span></p>
+            <form class="header-search" action="#" method="get">
+              <div class="form-group">
+                <select class="search" id="mark" name="mark">
+                  <option value="0">Выберите марку</option>
+                  <option value="audi">Audi</option>
+                  <option value="bmw">BMW</option>
+                  <option value="chevrolet">Chevrolet</option>
+                  <option value="ford">Ford</option>
+                  <option value="honda">Honda</option>
+                  <option value="hyundai">Hyundai</option>
+                  <option value="kia">Kia</option>
+                  <option value="mazda">Mazda</option>
+                  <option value="mercedez">Mercedes</option>
+                  <option value="mitsubishi">Mitsubishi</option>
+                  <option value="nissan">Nissan</option>
+                  <option value="skoda">Skoda</option>
+                  <option value="subaru">Subaru</option>
+                  <option value="toyota">Toyota</option>
+                  <option value="vaz">VAZ</option>
+                  <option value="volkswagen">Volkswagen</option>
+                  <option value="volvo">Volvo</option>
+                  <option value="renault">Renault</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="search" id="model" name="model">
+                  <option value="0">Выберите модель</option>
+                </select>  
+              </div> 
+
+              <div class="main-request-mobile_parts"><span>Какая деталь повреждена?</span></div>
+
+              <div class="form-group">
+                <select class="search" id="parts" name="parts">
+                  <option value="0">Выберите запчасть</option>
+                  <option value="cowling">Капот</option>
+                  <option value="front-door">Дверь Перед</option>
+                  <option value="back-door">Дверь зад</option>
+                  <option value="roof">Крыша</option>
+                  <option value="front-wing">Крыло перед</option>
+                  <option value="back-wing">Крыло зад</option>
+                  <option value="back-bumper">Бампер зад</option>
+                  <option value="front-bumper">Бампер перед</option>
+                  <option value="trunk-lid">Крышка багажника</option>
+                  <option value="mirror">Зеркало</option>
+                </select>  
+              </div> 
+            </form>
+            <h3>Стоимость: ≈<span class="colortext"> от <span id="price">0</span> руб.</span></h3>
+            <button class="request-bt" id="send-request">Оформить заявку</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section>
+      <div class="main-sliders">
+        <div class="fixed-container">
+          <div class="tabs-slider">
+            <p>МЫ УСТРАНЯЛИ:</p>
+            <nav>
+              <ul class="hr">
+                <li id="1" class="link-active" ><span class="li-link">Незначительные дефекты</span></li>
+                <li id="2" ><span class="li-link">Последствия после ДТП</span></li>
+                <li id="3" ><span class="li-link">Серьёзные аварии</span></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="slider-img photo-1">
+            <div class="slider-info">
+              <div>
+                <span class="slider-text">Стоимость: 
+                  <span class="slider-price">15 500 руб.</span> 
+                </span>
+              </div>
+              <div>
+                <span class="slider-text">Срок работы: 
+                  <span class="slider-days">10  дней</span>
+                </span>
+              </div>            
+            </div>
+            <div class="slider-arrow-left">
+
+            </div>
+            <div class="slider-arrow-right">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="main-background">
+        <div class="fixed-container">
+         <h2>ВЫПОЛНЯЕМ РАБОТЫ КАК ПО
+           <br>ПОЛИРОВКЕ БАМПЕРОВ,
+           <br>ТАК И ПО ПОЛНОМУ
+           <br>ВОССТАНОВЛЕНИЮ
+           <br>ГЕОМЕТРИИ КУЗОВА</h2>
+
+           <div class="main-background_mobile">
+             <h3>ВЫПОЛНЯЕМ РАБОТЫ <span class="main-background_mobile__text">КАК ПО
+           <br>ПОЛИРОВКЕ БАМПЕРОВ,
+           <br>ТАК И ПО ПОЛНОМУ
+           <br>ВОССТАНОВЛЕНИЮ
+           <br>ГЕОМЕТРИИ КУЗОВА</span></h3>
+           </div>
+         </div>
+       </div>
+     </section>
+
+
+     <section>
+      <div class="main-background_dealer-prices">
+        <div class="fixed-container">
+          <h2>Покупаем оригинальные 
+            <br>запчасти по дилерским ценам
+            <br><span class="colortext">вы экономите до 40%</span>
+            <br>на ремонте авто
+          </h2>
+
+          <div class="main-background_dealer-prices_mobile">
+            <h3>Покупаем оригинальные 
+              <br>запчасти по дилерским 
+              <br>ценам<span class="colortext">вы экономите до
+              <br>40%</span>на ремонте авто
+            </h3>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="main-background_tow-truck">
+        <div class="fixed-container">
+          <h2>ВАША МАШИНА НЕ НА ХОДУ?</h2>
+          <h3>Мы закажем бесплатно эвакуатор</h3>
+          <p>От:</p>
+          <form class="header-search" action="#" method="get">
+            <input class="search" id="search" name="search" type="text">
+            <label for="search" class="search-label">Ввдетие ваш адрес</label>
+          </form>
+          <p>До:</p>
+          <div class="main-address"><p>г.Екатеринбург, ул.Черепанова 23</p></div>
+          <form class="header-search" action="#" method="get">
+            <input class="search" id="search" name="search" type="text">
+            <label for="search" class="search-label">+7 (___) ___-__-__</label>
+          </form>
+          <button class="main-bt_tow-truck">ЗАКАЗАТЬ ВЫЕЗДНОЙ ОСМОТР</button>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section>
+      <div class="main-HowToFind">
+        <div class="fixed-container">
+          <div class="HowToFind">
+            <h2>Как нас найти?</h2>
+            <div class="main-gallery">
+              <div class="main-gallery-block">
+                <div class="main-gallery-form block-1"></div>
+                <p>Покупаем оригинальные<br>запчасти по дилерским<br>ценам</p>
+              </div>
+              <div class="main-gallery-block">
+                <div class="main-gallery-form block-2"></div>
+                <p>Покупаем оригинальные<br>запчасти по дилерским<br>ценам</p>
+              </div>
+              <div class="main-gallery-block">
+                <div class="main-gallery-form block-3"></div>
+                <p>Покупаем оригинальные<br>запчасти по дилерским<br>ценам</p>
+              </div>
+              <div class="main-gallery-block">
+                <div class="main-gallery-form block-4"></div>
+                <p>Покупаем оригинальные<br>запчасти по дилерским<br>ценам</p>
+              </div>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="footer">
+
+      <div class="fixed-container">
+        <h2>Контакты</h2>
+        <div class="footer-contacts">
+          <h2>ПРИЕЗЖАЙТЕ НА<br>БЕСПЛАТНЫЙ ОСМОТР</h2>
+          <p class="footer-call">+7 (800) 000-00-00</p>
+          <p class="footer-email">lawyer@gmal.ru</p>
+          <p class="footer-marker">г.Екатеринбург, ул.Черепанова 23,<br>Режим работы: 10:00 - 19:00</p>
+        </div>  
+      </div> 
+      <div class="footer-map"> 
+      </div>
+    </div>
+  </footer>
+
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
